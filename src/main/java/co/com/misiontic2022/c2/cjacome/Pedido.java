@@ -48,18 +48,15 @@ public class Pedido {
 
     public Double calcularImpuestos() {
        Double impuestos = 0.0;
-        //var vlo=this.calcularSubtotal();
       
        for (Vehiculo vehiculo : vehiculos) { 
          
           var valorImpuesto =vehiculo.calcularPrecio()-vehiculo.calcularDescuento(fecha);
           valorImpuesto*= vehiculo.calcularPorcentajeImpuesto()/100;
-          //impuestos += vehiculo.calcularPorcentajeImpuesto()/100;
 
           impuestos+=valorImpuesto;
         }
         
-      // System.out.println("Esto es el impuesto--> "+valor );
         return impuestos;
     }
 

@@ -60,7 +60,7 @@ public abstract class Vehiculo {
     }
     return calcularPrecio()* (desc/100);
     }
-
+    //clases abstractas
     public abstract Double calcularPrecio();
     public abstract Double calcularPorcentajeImpuesto();
 }

@@ -31,18 +31,9 @@ public class Motocicleta extends Vehiculo{
         return precio;
     }
 
-   /* public Double calcularPorcentajeImpuesto() {
-     //   return calcularPrecio() > 7_500_000d ? 10d : 0d;
-
-        var precio= calcularPrecio();
-        return precio > 7_500_000d ? 10d : 0d;
-
-             
-    }
-    */
+   
     public Double calcularPorcentajeImpuesto() {
         
-    //    var precio= calcularPrecio();
         return calcularPrecio() > 7_500_000d ? 10d : 0d;
         
     }
